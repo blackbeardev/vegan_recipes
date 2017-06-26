@@ -1,1 +1,11 @@
 <h1>All the recipes</h1>
+
+<% recipes.forEach(function(recipe) { %>
+    <div>
+        <img style="width: 200px; height: 200px;" src="<%=recipe.image%>">
+    </div>
+    <div>
+        <h2><%-recipe.title%></h2>
+        <a href="/recipes/<%=recipe._id%>">See the recipe!</a>
+    </div>
+<% }); %>
